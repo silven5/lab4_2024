@@ -1,0 +1,108 @@
+@import url("base.css");
+nav {
+  border-bottom: 1px solid var(--color-black);
+  height: 77px;
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  width: 100%;
+}
+.logo {
+  display: flex;
+  font-weight: 400;
+  font-style: italic;
+  font-size: var(--p-font-size);
+  width: 333px;
+  height: 77px;
+  border-right: 1px solid var(--color-black);
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  transition: color 2s;
+}
+.logo:hover {
+  color: var(--color-pink);
+  transition: color 2s;
+}
+.main-menu {
+  display: flex;
+  /* max-width: 700px; */
+  height: 77px;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  padding-left: 149px;
+  gap: 64px;
+}
+.main-menu a {
+  width: 125px;
+  font-size: 24px;
+  transition: color 2s;
+}
+.main-menu a:hover {
+  color: var(--color-red-text);
+  transition: color 2s;
+}
+
+.menu-panel {
+  display: flex;
+  align-items: center;
+  justify-content: end;
+  gap: 36px;
+  max-width: 150px;
+  margin-left: 120px;
+}
+.menu-panel svg {
+  cursor: pointer;
+}
+
+@media all and (max-width: 1300px) {
+  .logo {
+    width: 20%;
+  }
+  .menu-panel {
+    width: 15%;
+    margin-left: 0px;
+  }
+  .menu-panel svg {
+    width: 24px;
+    height: 24px;
+  }
+  .main-menu {
+    width: 60%;
+    padding-left: 10px;
+    gap: 10px;
+  }
+}
+@media all and (max-width: 670px) {
+  nav {
+    flex-direction: column;
+  }
+  .logo,
+  .main-menu,
+  .menu-panel {
+    width: 90%;
+    height: 30%;
+    font-size: 3vw;
+  }
+  .logo {
+    border-right: none;
+    height: 30%;
+  }
+  .main-menu {
+    gap: 5px;
+    height: 30%;
+  }
+  .main-menu div {
+    width: 20%;
+    font-size: 2vw;
+  }
+  .menu-panel {
+    justify-content: center;
+  }
+  .menu-panel svg {
+    width: 2vw;
+    height: 2vw;
+  }
+}

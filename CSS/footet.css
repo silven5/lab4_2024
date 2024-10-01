@@ -1,0 +1,132 @@
+.footer {
+  height: 868px;
+  margin-top: 349px;
+  display: flex;
+}
+.circle {
+  position: relative;
+  width: 762px;
+  height: 668px;
+  font-size: var(--h2-font-size);
+  font-style: italic;
+  top: 570px;
+  left: 400px;
+  transform: rotate(5deg);
+  /* border-radius: 80px/45px; */
+}
+.circle span {
+  position: absolute;
+  left: 50%; /* усі букви ставимо в одно точку*/
+  width: 0; /* прибираєємо відступи */
+}
+.circle span:nth-of-type(-n + 11) {
+  bottom: 50%; /* відступ від центру по радіусу */
+  -ms-transform-origin: 0% 100%;
+  -webkit-transform-origin: 0% 100%;
+  transform-origin: 0% 100%;
+  padding-bottom: 50%; /* відступ від центру кругу */
+}
+.circle span:nth-of-type(1) {
+  transform: rotate(270deg);
+  color: var(--color-white);
+}
+.circle span:nth-of-type(2) {
+  transform: rotate(286deg);
+  color: var(--color-white);
+}
+.circle span:nth-of-type(3) {
+  transform: rotate(302deg);
+  color: var(--color-white);
+}
+.circle span:nth-of-type(4) {
+  transform: rotate(334deg);
+  color: var(--color-white);
+}
+.circle span:nth-of-type(5) {
+  transform: rotate(350deg);
+}
+.circle span:nth-of-type(6) {
+  transform: rotate(22deg);
+}
+.circle span:nth-of-type(7) {
+  transform: rotate(38deg);
+}
+.circle span:nth-of-type(8) {
+  transform: rotate(54deg);
+}
+.circle span:nth-of-type(9) {
+  transform: rotate(70deg);
+}
+.footer-img {
+  position: relative;
+}
+.footer-large-img {
+  background: url("../IMG/footer-sunny.png");
+  width: 579px;
+  height: 868px;
+  position: relative;
+  top: -669px;
+  z-index: -2;
+  left: 100px;
+}
+.footer-img-blur {
+  position: absolute;
+  width: 274px;
+  height: 274px;
+  left: 560px;
+  top: -800px;
+  background: var(--color-pink-blur);
+  filter: blur(51.5px);
+  z-index: -5;
+  border-radius: 270px;
+}
+.footer-blur {
+  position: absolute;
+  width: 364px;
+  height: 364px;
+  left: 1261px;
+
+  border-radius: 270px;
+  background: var(--color-pink-blur);
+  filter: blur(51.5px);
+  z-index: -5;
+}
+.footer-gallery {
+  width: 541px;
+  height: 401px;
+  display: flex;
+  flex-direction: column;
+}
+.footer-gallery-h3 {
+  font-size: var(--h3-font-size);
+  font-style: italic;
+  color: var(--color-red-text);
+  margin-bottom: 30px;
+  cursor: pointer;
+}
+.footer-gallery-h3:hover {
+  text-decoration: underline;
+}
+.footer-gallery-box {
+  display: flex;
+  gap: 20px;
+}
+.footer-gallery-box-card {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  cursor: pointer;
+  p {
+    font-size: 20px;
+    color: var(--color-black);
+    font-style: italic;
+    width: 167px;
+  }
+  p:hover {
+    text-decoration: underline;
+  }
+}
+.footer-gallery-box-img {
+  width: 167px;
+  height: 247px;
+}

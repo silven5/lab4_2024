@@ -1,0 +1,30 @@
+@import url("reset.css");
+@import url("base.css");
+@import url("background.css");
+@import url("main.css");
+@import url("main-menu.css");
+@import url("header.css");
+@import url("section_tame.css");
+@import url("footet.css");
+body {
+  font-family: var(--font);
+  color: var(--color-black);
+  background-color: var(--color-pink);
+  margin: auto;
+  overflow-x: hidden;
+}
+h2 {
+  font-size: var(--h2-font-size);
+}
+h3 {
+  font-size: var(--h3-font-size);
+}
+p {
+  font-size: var(--p-font-size);
+}
+a {
+  position: relative;
+  color: #484848;
+  font-size: 1.25rem;
+  text-decoration: none;
+}

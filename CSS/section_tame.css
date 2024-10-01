@@ -1,0 +1,114 @@
+.section-tame {
+  height: 1500px;
+  display: flex;
+}
+.section-tame-club {
+  position: relative;
+  width: 560px;
+}
+.section-tame-club-img {
+  background-image: url("../IMG/sunny-1.png");
+  width: 556px;
+  height: 982px;
+}
+.section-tame-club-text {
+  background-color: var(--color-white);
+  height: 29px;
+  width: 556px;
+  transform: skewY(-23deg);
+  position: absolute;
+  top: 500px;
+  display: flex;
+  align-items: center;
+  overflow: hidden;
+  justify-content: end;
+
+  p {
+    font-style: italic;
+    font-weight: 500;
+    font-size: 15px;
+
+    /* animation: text 5s infinite linear; */
+    white-space: nowrap;
+    animation: run 10s linear infinite;
+  }
+}
+@keyframes run {
+  from {
+    transform: translateX(0%);
+  }
+  /* Magic is here. This is the width of the elem with text after rendering the page */
+  to {
+    transform: translateX(-556px);
+  }
+}
+
+.section-tame-club-blur-top {
+  position: absolute;
+  width: 274px;
+  height: 274px;
+  left: -80px;
+  top: -80px;
+  background: var(--color-pink-blur);
+  filter: blur(51.5px);
+  z-index: -5;
+  border-radius: 270px;
+}
+.section-tame-club-blur-right {
+  position: absolute;
+  width: 364px;
+  height: 364px;
+  left: 361px;
+  top: 700px;
+  border-radius: 270px;
+  background: var(--color-pink-blur);
+  filter: blur(51.5px);
+  z-index: -5;
+}
+.section-tame-club-bag {
+  background-image: url("../IMG/sunny-1-bug.png");
+  width: 282px;
+  height: 386px;
+  position: absolute;
+  top: 500px;
+  left: 370px;
+  z-index: 6;
+}
+.section-tame-text {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: start;
+  position: relative;
+  width: 796px;
+  margin-top: 20%;
+  h2 {
+    font-weight: 100;
+    font-size: var(--h2-font-size);
+    span {
+      font-style: italic;
+      color: var(--color-red-text);
+    }
+  }
+}
+.section-tame-text-a {
+  font-style: italic;
+  font-weight: 400 !important;
+  font-size: 32px !important;
+  line-height: 46px;
+  text-decoration-line: underline;
+  align-self: end;
+  transition: color 2s;
+}
+.section-tame-text-a:hover {
+  color: var(--color-red-text);
+  transition: color 2s;
+}
+.section-tame-aside {
+  background-image: url("../IMG/sunny-2.png");
+  width: 405px;
+  height: 726px;
+  position: absolute;
+  top: 450px;
+  left: 535px;
+}

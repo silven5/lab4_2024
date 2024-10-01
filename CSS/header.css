@@ -1,0 +1,107 @@
+@import url("base.css");
+header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 1500px;
+}
+.header-button-section {
+  display: flex;
+  justify-content: center;
+  width: 328px;
+}
+.hader-button-blur-section {
+  position: relative;
+  height: 200px;
+  cursor: pointer;
+}
+.hader-button-blur-section:hover {
+  color: var(--color-pink);
+  text-decoration: underline;
+  transition: color 2s;
+}
+.header-button {
+  /* Ellipse 6 */
+  box-sizing: border-box;
+  width: 160px;
+  border: 2px solid #000000;
+  border-radius: 80px/45px;
+  height: 90px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: var(--p-font-size);
+  font-style: italic;
+  font-weight: 400;
+
+  /* clip-path: ellipse(50% 50%); */
+}
+
+.header-button-blur {
+  position: absolute;
+  width: 138px;
+  height: 78px;
+  left: 10px;
+  top: 10px;
+
+  background: var(--color-pink-blur);
+  filter: blur(51.5px);
+}
+.header-img-section {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  width: 1000px;
+  align-self: start;
+  padding-top: 150px;
+  margin-left: 50px;
+}
+.header-img-section--text {
+  font-size: var(--h2-font-size);
+  color: var(--color-black);
+  width: 725px;
+  font-weight: 100;
+  text-align: center;
+  p {
+    padding: 20px;
+  }
+}
+
+.header-img-section--text-white {
+  color: var(--color-white);
+  position: relative;
+  z-index: 1;
+  span {
+    font-style: italic;
+  }
+}
+.header-img-section--img-blur {
+  position: relative;
+}
+
+.header-img-section--img {
+  background-image: url("../IMG/sunny.png");
+  width: 656px;
+  height: 951px;
+  margin-top: -80px;
+  z-index: -1;
+}
+.header-img-section--blur {
+  position: absolute;
+  width: 364px;
+  height: 364px;
+  top: 337px;
+  left: 400px;
+  z-index: -25;
+  border-radius: 270px;
+  background: var(--color-pink-blur);
+  filter: blur(51.5px);
+}
+.header-vector {
+  position: relative;
+  background-image: url("../IMG/header-vector.png");
+  background-repeat: no-repeat;
+  width: 227px;
+  height: 154px;
+  left: 130px;
+}
